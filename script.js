@@ -22,12 +22,15 @@ document.querySelector("#button").addEventListener("click", () => {
   speech.text = document.querySelector("textarea").value;
   window.speechSynthesis.speak(speech);
 });
-
-// for speaking
-document.querySelector("#button").addEventListener("click", () => {
-  speech.text = document.querySelector("textarea").value;
+const randomvvoice = () => {
+  console.log("hii");
+  speech.text =
+    "Hey, How are You, This is a text to speech converter, You can change the voice also, Have a nice day";
   window.speechSynthesis.speak(speech);
-});
+};
+randomvvoice();
+ 
+
 
 // Add download button functionality
 document.querySelector("#download-button").addEventListener("click", () => {
